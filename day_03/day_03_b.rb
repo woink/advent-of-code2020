@@ -1,4 +1,4 @@
-require 'byebug'
+
 slope_segments = ARGF.readlines.map { |row| row.chomp.split('') }
 
 directions = [
@@ -18,7 +18,7 @@ def sum_trees_on_slopes(slope_segments, right_value, skip_lines_value)
       position += right_value
       encountered_trees
     end
-  p segments_with_collisions.size
+  segments_with_collisions.size
 end
 
 def multiply_trees(tree_sum)
